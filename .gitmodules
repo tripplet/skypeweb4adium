@@ -1,0 +1,6 @@
+[submodule "skype4pidgin"]
+	path = skype4pidgin
+	url = https://github.com/EionRobb/skype4pidgin.git
+[submodule "adium"]
+	path = adium
+	url = https://github.com/adium/adium.git
