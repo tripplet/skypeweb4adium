@@ -6,7 +6,31 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CD74DB751AED6E4B00E6E652 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB721AED6E4B00E6E652 /* Adium.framework */; };
+		CD74DB761AED6E4B00E6E652 /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB731AED6E4B00E6E652 /* AdiumLibpurple.framework */; };
+		CD74DB771AED6E4B00E6E652 /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB741AED6E4B00E6E652 /* AIUtilities.framework */; };
+		CD74DB7E1AED6EA100E6E652 /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB791AED6EA100E6E652 /* libglib.framework */; };
+		CD74DB7F1AED6EA100E6E652 /* libgobject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB7A1AED6EA100E6E652 /* libgobject.framework */; };
+		CD74DB801AED6EA100E6E652 /* libintl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB7B1AED6EA100E6E652 /* libintl.framework */; };
+		CD74DB811AED6EA100E6E652 /* libjson-glib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB7C1AED6EA100E6E652 /* libjson-glib.framework */; };
+		CD74DB821AED6EA100E6E652 /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB7D1AED6EA100E6E652 /* libpurple.framework */; };
+		CD74DB841AED6F3100E6E652 /* AISkypewebPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */; };
+		CD74DB871AED706500E6E652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB861AED706500E6E652 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		CD74DB721AED6E4B00E6E652 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = "adium/build/Release-Debug/Adium.framework"; sourceTree = "<group>"; };
+		CD74DB731AED6E4B00E6E652 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = "adium/build/Release-Debug/AdiumLibpurple.framework"; sourceTree = "<group>"; };
+		CD74DB741AED6E4B00E6E652 /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "adium/build/Release-Debug/AIUtilities.framework"; sourceTree = "<group>"; };
+		CD74DB791AED6EA100E6E652 /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = adium/Frameworks/libglib.framework; sourceTree = "<group>"; };
+		CD74DB7A1AED6EA100E6E652 /* libgobject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgobject.framework; path = adium/Frameworks/libgobject.framework; sourceTree = "<group>"; };
+		CD74DB7B1AED6EA100E6E652 /* libintl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libintl.framework; path = adium/Frameworks/libintl.framework; sourceTree = "<group>"; };
+		CD74DB7C1AED6EA100E6E652 /* libjson-glib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "libjson-glib.framework"; path = "adium/Frameworks/libjson-glib.framework"; sourceTree = "<group>"; };
+		CD74DB7D1AED6EA100E6E652 /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = adium/Frameworks/libpurple.framework; sourceTree = "<group>"; };
+		CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISkypewebPlugin.m; sourceTree = "<group>"; };
+		CD74DB851AED6F6800E6E652 /* AISkypewebPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AISkypewebPlugin.h; sourceTree = "<group>"; };
+		CD74DB861AED706500E6E652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDEC6DCA1AED672300E6E652 /* skypeweb4adium.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skypeweb4adium.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEC6DCE1AED672300E6E652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -16,16 +40,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD74DB871AED706500E6E652 /* Foundation.framework in Frameworks */,
+				CD74DB751AED6E4B00E6E652 /* Adium.framework in Frameworks */,
+				CD74DB771AED6E4B00E6E652 /* AIUtilities.framework in Frameworks */,
+				CD74DB7F1AED6EA100E6E652 /* libgobject.framework in Frameworks */,
+				CD74DB801AED6EA100E6E652 /* libintl.framework in Frameworks */,
+				CD74DB811AED6EA100E6E652 /* libjson-glib.framework in Frameworks */,
+				CD74DB821AED6EA100E6E652 /* libpurple.framework in Frameworks */,
+				CD74DB761AED6E4B00E6E652 /* AdiumLibpurple.framework in Frameworks */,
+				CD74DB7E1AED6EA100E6E652 /* libglib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD74DB711AED6BD300E6E652 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD74DB861AED706500E6E652 /* Foundation.framework */,
+				CD74DB781AED6E5200E6E652 /* Adium */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD74DB781AED6E5200E6E652 /* Adium */ = {
+			isa = PBXGroup;
+			children = (
+				CD74DB721AED6E4B00E6E652 /* Adium.framework */,
+				CD74DB731AED6E4B00E6E652 /* AdiumLibpurple.framework */,
+				CD74DB741AED6E4B00E6E652 /* AIUtilities.framework */,
+				CD74DB791AED6EA100E6E652 /* libglib.framework */,
+				CD74DB7A1AED6EA100E6E652 /* libgobject.framework */,
+				CD74DB7B1AED6EA100E6E652 /* libintl.framework */,
+				CD74DB7C1AED6EA100E6E652 /* libjson-glib.framework */,
+				CD74DB7D1AED6EA100E6E652 /* libpurple.framework */,
+			);
+			name = Adium;
+			sourceTree = "<group>";
+		};
 		CDEC6DC11AED672300E6E652 = {
 			isa = PBXGroup;
 			children = (
 				CDEC6DCC1AED672300E6E652 /* skypeweb4adium */,
+				CD74DB711AED6BD300E6E652 /* Frameworks */,
 				CDEC6DCB1AED672300E6E652 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				CDEC6DCD1AED672300E6E652 /* Supporting Files */,
+				CD74DB851AED6F6800E6E652 /* AISkypewebPlugin.h */,
+				CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */,
 			);
 			path = skypeweb4adium;
 			sourceTree = "<group>";
@@ -137,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD74DB841AED6F3100E6E652 /* AISkypewebPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +208,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -189,6 +251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -202,7 +265,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -224,6 +287,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/adium/build/Release-Debug",
+					"$(PROJECT_DIR)/adium/Frameworks",
+				);
 				INFOPLIST_FILE = skypeweb4adium/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -236,6 +304,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/adium/build/Release-Debug",
+					"$(PROJECT_DIR)/adium/Frameworks",
+				);
 				INFOPLIST_FILE = skypeweb4adium/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
