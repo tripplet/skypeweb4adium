@@ -1,0 +1,5 @@
+language: objective-c
+xcode_project: skypeweb4adium.xcodeproj
+xcode_scheme: skypeweb4adium
+after_success:
+  - xctool -project skypeweb4adium.xcodeproj -scheme skypeweb4adium -configuration Release build
