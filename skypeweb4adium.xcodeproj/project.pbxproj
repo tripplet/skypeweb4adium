@@ -17,6 +17,7 @@
 		CD74DB821AED6EA100E6E652 /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB7D1AED6EA100E6E652 /* libpurple.framework */; };
 		CD74DB841AED6F3100E6E652 /* AISkypewebPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */; };
 		CD74DB871AED706500E6E652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB861AED706500E6E652 /* Foundation.framework */; };
+		CD7B08D91B5C303300E6E652 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7B08D81B5C303300E6E652 /* libz.dylib */; };
 		CD99FB481B5BF4E100E6E652 /* libskypeweb.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB3C1B5BF4E100E6E652 /* libskypeweb.c */; };
 		CD99FB491B5BF4E100E6E652 /* skypeweb_connection.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB3E1B5BF4E100E6E652 /* skypeweb_connection.c */; };
 		CD99FB4A1B5BF4E100E6E652 /* skypeweb_contacts.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB401B5BF4E100E6E652 /* skypeweb_contacts.c */; };
@@ -38,6 +39,7 @@
 		CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISkypewebPlugin.m; sourceTree = "<group>"; };
 		CD74DB851AED6F6800E6E652 /* AISkypewebPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AISkypewebPlugin.h; sourceTree = "<group>"; };
 		CD74DB861AED706500E6E652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD7B08D81B5C303300E6E652 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CD99FB3C1B5BF4E100E6E652 /* libskypeweb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libskypeweb.c; path = skype4pidgin/skypeweb/libskypeweb.c; sourceTree = "<group>"; };
 		CD99FB3D1B5BF4E100E6E652 /* libskypeweb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libskypeweb.h; path = skype4pidgin/skypeweb/libskypeweb.h; sourceTree = "<group>"; };
 		CD99FB3E1B5BF4E100E6E652 /* skypeweb_connection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = skypeweb_connection.c; path = skype4pidgin/skypeweb/skypeweb_connection.c; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7B08D91B5C303300E6E652 /* libz.dylib in Frameworks */,
 				CD74DB871AED706500E6E652 /* Foundation.framework in Frameworks */,
 				CD74DB751AED6E4B00E6E652 /* Adium.framework in Frameworks */,
 				CD74DB771AED6E4B00E6E652 /* AIUtilities.framework in Frameworks */,
@@ -80,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				CD74DB861AED706500E6E652 /* Foundation.framework */,
+				CD7B08D81B5C303300E6E652 /* libz.dylib */,
 				CD74DB781AED6E5200E6E652 /* Adium */,
 			);
 			name = Frameworks;
