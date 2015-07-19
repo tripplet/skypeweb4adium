@@ -17,6 +17,13 @@
 		CD74DB821AED6EA100E6E652 /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB7D1AED6EA100E6E652 /* libpurple.framework */; };
 		CD74DB841AED6F3100E6E652 /* AISkypewebPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */; };
 		CD74DB871AED706500E6E652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB861AED706500E6E652 /* Foundation.framework */; };
+		CD99FB481B5BF4E100E6E652 /* libskypeweb.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB3C1B5BF4E100E6E652 /* libskypeweb.c */; };
+		CD99FB491B5BF4E100E6E652 /* skypeweb_connection.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB3E1B5BF4E100E6E652 /* skypeweb_connection.c */; };
+		CD99FB4A1B5BF4E100E6E652 /* skypeweb_contacts.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB401B5BF4E100E6E652 /* skypeweb_contacts.c */; };
+		CD99FB4B1B5BF4E100E6E652 /* skypeweb_login.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB421B5BF4E100E6E652 /* skypeweb_login.c */; };
+		CD99FB4C1B5BF4E100E6E652 /* skypeweb_messages.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB441B5BF4E100E6E652 /* skypeweb_messages.c */; };
+		CD99FB4D1B5BF4E100E6E652 /* skypeweb_util.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB461B5BF4E100E6E652 /* skypeweb_util.c */; };
+		CD99FB4F1B5BFBF700E6E652 /* PurpleSkypeWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB4E1B5BFBF700E6E652 /* PurpleSkypeWebService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,20 @@
 		CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AISkypewebPlugin.m; sourceTree = "<group>"; };
 		CD74DB851AED6F6800E6E652 /* AISkypewebPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AISkypewebPlugin.h; sourceTree = "<group>"; };
 		CD74DB861AED706500E6E652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD99FB3C1B5BF4E100E6E652 /* libskypeweb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libskypeweb.c; path = skype4pidgin/skypeweb/libskypeweb.c; sourceTree = "<group>"; };
+		CD99FB3D1B5BF4E100E6E652 /* libskypeweb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libskypeweb.h; path = skype4pidgin/skypeweb/libskypeweb.h; sourceTree = "<group>"; };
+		CD99FB3E1B5BF4E100E6E652 /* skypeweb_connection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = skypeweb_connection.c; path = skype4pidgin/skypeweb/skypeweb_connection.c; sourceTree = "<group>"; };
+		CD99FB3F1B5BF4E100E6E652 /* skypeweb_connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skypeweb_connection.h; path = skype4pidgin/skypeweb/skypeweb_connection.h; sourceTree = "<group>"; };
+		CD99FB401B5BF4E100E6E652 /* skypeweb_contacts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = skypeweb_contacts.c; path = skype4pidgin/skypeweb/skypeweb_contacts.c; sourceTree = "<group>"; };
+		CD99FB411B5BF4E100E6E652 /* skypeweb_contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skypeweb_contacts.h; path = skype4pidgin/skypeweb/skypeweb_contacts.h; sourceTree = "<group>"; };
+		CD99FB421B5BF4E100E6E652 /* skypeweb_login.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = skypeweb_login.c; path = skype4pidgin/skypeweb/skypeweb_login.c; sourceTree = "<group>"; };
+		CD99FB431B5BF4E100E6E652 /* skypeweb_login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skypeweb_login.h; path = skype4pidgin/skypeweb/skypeweb_login.h; sourceTree = "<group>"; };
+		CD99FB441B5BF4E100E6E652 /* skypeweb_messages.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = skypeweb_messages.c; path = skype4pidgin/skypeweb/skypeweb_messages.c; sourceTree = "<group>"; };
+		CD99FB451B5BF4E100E6E652 /* skypeweb_messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skypeweb_messages.h; path = skype4pidgin/skypeweb/skypeweb_messages.h; sourceTree = "<group>"; };
+		CD99FB461B5BF4E100E6E652 /* skypeweb_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = skypeweb_util.c; path = skype4pidgin/skypeweb/skypeweb_util.c; sourceTree = "<group>"; };
+		CD99FB471B5BF4E100E6E652 /* skypeweb_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skypeweb_util.h; path = skype4pidgin/skypeweb/skypeweb_util.h; sourceTree = "<group>"; };
+		CD99FB4E1B5BFBF700E6E652 /* PurpleSkypeWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurpleSkypeWebService.m; sourceTree = "<group>"; };
+		CD99FB501B5BFC1300E6E652 /* PurpleSkypeWebService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurpleSkypeWebService.h; sourceTree = "<group>"; };
 		CDEC6DCA1AED672300E6E652 /* skypeweb4adium.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skypeweb4adium.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEC6DCE1AED672300E6E652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,10 +100,30 @@
 			name = Adium;
 			sourceTree = "<group>";
 		};
+		CD99FB3B1B5BF4A100E6E652 /* skypeweb4purple */ = {
+			isa = PBXGroup;
+			children = (
+				CD99FB3C1B5BF4E100E6E652 /* libskypeweb.c */,
+				CD99FB3D1B5BF4E100E6E652 /* libskypeweb.h */,
+				CD99FB3E1B5BF4E100E6E652 /* skypeweb_connection.c */,
+				CD99FB3F1B5BF4E100E6E652 /* skypeweb_connection.h */,
+				CD99FB401B5BF4E100E6E652 /* skypeweb_contacts.c */,
+				CD99FB411B5BF4E100E6E652 /* skypeweb_contacts.h */,
+				CD99FB421B5BF4E100E6E652 /* skypeweb_login.c */,
+				CD99FB431B5BF4E100E6E652 /* skypeweb_login.h */,
+				CD99FB441B5BF4E100E6E652 /* skypeweb_messages.c */,
+				CD99FB451B5BF4E100E6E652 /* skypeweb_messages.h */,
+				CD99FB461B5BF4E100E6E652 /* skypeweb_util.c */,
+				CD99FB471B5BF4E100E6E652 /* skypeweb_util.h */,
+			);
+			name = skypeweb4purple;
+			sourceTree = "<group>";
+		};
 		CDEC6DC11AED672300E6E652 = {
 			isa = PBXGroup;
 			children = (
 				CDEC6DCC1AED672300E6E652 /* skypeweb4adium */,
+				CD99FB3B1B5BF4A100E6E652 /* skypeweb4purple */,
 				CD74DB711AED6BD300E6E652 /* Frameworks */,
 				CDEC6DCB1AED672300E6E652 /* Products */,
 			);
@@ -102,6 +143,8 @@
 				CDEC6DCD1AED672300E6E652 /* Supporting Files */,
 				CD74DB851AED6F6800E6E652 /* AISkypewebPlugin.h */,
 				CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */,
+				CD99FB4E1B5BFBF700E6E652 /* PurpleSkypeWebService.m */,
+				CD99FB501B5BFC1300E6E652 /* PurpleSkypeWebService.h */,
 			);
 			path = skypeweb4adium;
 			sourceTree = "<group>";
@@ -197,7 +240,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD99FB4A1B5BF4E100E6E652 /* skypeweb_contacts.c in Sources */,
+				CD99FB4D1B5BF4E100E6E652 /* skypeweb_util.c in Sources */,
+				CD99FB4B1B5BF4E100E6E652 /* skypeweb_login.c in Sources */,
 				CD74DB841AED6F3100E6E652 /* AISkypewebPlugin.m in Sources */,
+				CD99FB4F1B5BFBF700E6E652 /* PurpleSkypeWebService.m in Sources */,
+				CD99FB481B5BF4E100E6E652 /* libskypeweb.c in Sources */,
+				CD99FB491B5BF4E100E6E652 /* skypeweb_connection.c in Sources */,
+				CD99FB4C1B5BF4E100E6E652 /* skypeweb_messages.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,9 +290,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libjson-glib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libpurple.framework/Versions/Current/Headers",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -277,8 +334,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libjson-glib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libpurple.framework/Versions/Current/Headers",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
 				SDKROOT = macosx;
 			};
 			name = Release;

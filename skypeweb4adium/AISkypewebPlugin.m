@@ -7,11 +7,18 @@
 //
 
 #import "AISkypewebPlugin.h"
+#import "PurpleSkypeWebService.h"
+
+#import "libskypeweb.h"
+
+extern void purple_init_skypeweb_plugin();
 
 @implementation AISkypewebPlugin
 
 - (void)installPlugin
 {
+    purple_init_skypeweb_plugin();
+    [PurpleSkypeWebService registerService];
 }
 
 - (void)uninstallPlugin
