@@ -18,6 +18,9 @@
 		CD74DB841AED6F3100E6E652 /* AISkypewebPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */; };
 		CD74DB871AED706500E6E652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB861AED706500E6E652 /* Foundation.framework */; };
 		CD7B08D91B5C303300E6E652 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7B08D81B5C303300E6E652 /* libz.dylib */; };
+		CD7B08DB1B5DA55900E6E652 /* skype.png in Resources */ = {isa = PBXBuildFile; fileRef = CD7B08DA1B5DA55900E6E652 /* skype.png */; };
+		CD7B08E11B5DA80000E6E652 /* skype_small.png in Resources */ = {isa = PBXBuildFile; fileRef = CD7B08E01B5DA80000E6E652 /* skype_small.png */; };
+		CD7B08E51B5DA96600E6E652 /* PurpleSkypeWebAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7B08E41B5DA96600E6E652 /* PurpleSkypeWebAccount.m */; };
 		CD99FB481B5BF4E100E6E652 /* libskypeweb.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB3C1B5BF4E100E6E652 /* libskypeweb.c */; };
 		CD99FB491B5BF4E100E6E652 /* skypeweb_connection.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB3E1B5BF4E100E6E652 /* skypeweb_connection.c */; };
 		CD99FB4A1B5BF4E100E6E652 /* skypeweb_contacts.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB401B5BF4E100E6E652 /* skypeweb_contacts.c */; };
@@ -40,6 +43,10 @@
 		CD74DB851AED6F6800E6E652 /* AISkypewebPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AISkypewebPlugin.h; sourceTree = "<group>"; };
 		CD74DB861AED706500E6E652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD7B08D81B5C303300E6E652 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CD7B08DA1B5DA55900E6E652 /* skype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skype.png; path = skype4pidgin/icons/48/skype.png; sourceTree = SOURCE_ROOT; };
+		CD7B08E01B5DA80000E6E652 /* skype_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = skype_small.png; path = skype4pidgin/icons/16/skype_small.png; sourceTree = SOURCE_ROOT; };
+		CD7B08E31B5DA96600E6E652 /* PurpleSkypeWebAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurpleSkypeWebAccount.h; sourceTree = "<group>"; };
+		CD7B08E41B5DA96600E6E652 /* PurpleSkypeWebAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurpleSkypeWebAccount.m; sourceTree = "<group>"; };
 		CD99FB3C1B5BF4E100E6E652 /* libskypeweb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libskypeweb.c; path = skype4pidgin/skypeweb/libskypeweb.c; sourceTree = "<group>"; };
 		CD99FB3D1B5BF4E100E6E652 /* libskypeweb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libskypeweb.h; path = skype4pidgin/skypeweb/libskypeweb.h; sourceTree = "<group>"; };
 		CD99FB3E1B5BF4E100E6E652 /* skypeweb_connection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = skypeweb_connection.c; path = skype4pidgin/skypeweb/skypeweb_connection.c; sourceTree = "<group>"; };
@@ -104,6 +111,15 @@
 			name = Adium;
 			sourceTree = "<group>";
 		};
+		CD7B08DE1B5DA7C800E6E652 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CD7B08DA1B5DA55900E6E652 /* skype.png */,
+				CD7B08E01B5DA80000E6E652 /* skype_small.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
 		CD99FB3B1B5BF4A100E6E652 /* skypeweb4purple */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +163,10 @@
 				CDEC6DCD1AED672300E6E652 /* Supporting Files */,
 				CD74DB851AED6F6800E6E652 /* AISkypewebPlugin.h */,
 				CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */,
-				CD99FB4E1B5BFBF700E6E652 /* PurpleSkypeWebService.m */,
 				CD99FB501B5BFC1300E6E652 /* PurpleSkypeWebService.h */,
+				CD99FB4E1B5BFBF700E6E652 /* PurpleSkypeWebService.m */,
+				CD7B08E31B5DA96600E6E652 /* PurpleSkypeWebAccount.h */,
+				CD7B08E41B5DA96600E6E652 /* PurpleSkypeWebAccount.m */,
 			);
 			path = skypeweb4adium;
 			sourceTree = "<group>";
@@ -156,6 +174,7 @@
 		CDEC6DCD1AED672300E6E652 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD7B08DE1B5DA7C800E6E652 /* icons */,
 				CDEC6DCE1AED672300E6E652 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -170,6 +189,7 @@
 			buildPhases = (
 				CDEC6DC61AED672300E6E652 /* Sources */,
 				CDEC6DC71AED672300E6E652 /* Frameworks */,
+				CD7B08E61B5DAB9000E6E652 /* ShellScript */,
 				CDEC6DC81AED672300E6E652 /* Resources */,
 				CD74DB701AED691D00E6E652 /* ShellScript */,
 			);
@@ -218,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7B08E11B5DA80000E6E652 /* skype_small.png in Resources */,
+				CD7B08DB1B5DA55900E6E652 /* skype.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +259,19 @@
 			shellPath = /bin/sh;
 			shellScript = "ln -sf \"$BUILD_DIR\" xcode_build";
 		};
+		CD7B08E61B5DAB9000E6E652 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp skype4pidgin/icons/16/skype.png skype4pidgin/icons/16/skype_small.png";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -252,6 +287,7 @@
 				CD99FB481B5BF4E100E6E652 /* libskypeweb.c in Sources */,
 				CD99FB491B5BF4E100E6E652 /* skypeweb_connection.c in Sources */,
 				CD99FB4C1B5BF4E100E6E652 /* skypeweb_messages.c in Sources */,
+				CD7B08E51B5DA96600E6E652 /* PurpleSkypeWebAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
