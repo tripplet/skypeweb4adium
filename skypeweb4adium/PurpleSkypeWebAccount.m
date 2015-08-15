@@ -7,6 +7,7 @@
 //
 
 #import "PurpleSkypeWebAccount.h"
+#import <Adium/AIStatus.h>
 
 @implementation PurpleSkypeWebAccount
 
@@ -18,6 +19,31 @@
 - (NSString *)host
 {
     return @"api.skype.com";
+}
+
+- (const char *)purpleStatusIDForStatus:(AIStatus *)statusState
+                              arguments:(NSMutableDictionary *)arguments
+{
+    char *statusID = NULL;
+    
+    switch (statusState.statusType) {
+        case AIAvailableStatusType:
+            statusID = "Online";
+            break;
+        case AIAwayStatusType:
+            statusID = "Away";
+            break;
+            
+        case AIInvisibleStatusType:
+            statusID = "Hidden";
+            break;
+            
+        case AIOfflineStatusType:
+            statusID = "Offline";
+            break;
+    }
+    
+    return statusID;
 }
 
 @end

@@ -53,4 +53,19 @@
     return [[NSBundle bundleForClass:[self class]] pathForImageResource:@"skype"];
 }
 
+- (void)registerStatus:(NSString*) status_name ofType:(AIStatusType) status_type
+{
+    [adium.statusController registerStatus:status_name
+                           withDescription:[adium.statusController localizedDescriptionForCoreStatusName:status_name]
+                                    ofType:status_type forService:self];
+}
+
+- (void)registerStatuses {
+    [self registerStatus: STATUS_NAME_AVAILABLE ofType:AIAvailableStatusType];
+    [self registerStatus: STATUS_NAME_AWAY      ofType:AIAwayStatusType];
+    [self registerStatus: STATUS_NAME_BUSY      ofType:AIAwayStatusType];
+    [self registerStatus: STATUS_NAME_INVISIBLE ofType:AIInvisibleStatusType];
+    [self registerStatus: STATUS_NAME_OFFLINE   ofType:AIOfflineStatusType];
+}
+
 @end
