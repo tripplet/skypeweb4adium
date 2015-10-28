@@ -2,6 +2,6 @@ language: objective-c
 xcode_project: skypeweb4adium.xcodeproj
 xcode_scheme: skypeweb4adium
 before_install:
-  - cd adium; make | tail; cd ..
+  - cd adium; make | tail -n 40; cd ..
 after_success:
   - xctool -project skypeweb4adium.xcodeproj -scheme skypeweb4adium -configuration Release build
