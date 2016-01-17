@@ -8,8 +8,9 @@
 
 #import "AISkypewebPlugin.h"
 #import "PurpleSkypeWebService.h"
-
 #import "libskypeweb.h"
+
+#import <Adium/ESDebugAILog.h>
 
 extern void purple_init_skypeweb_plugin();
 
@@ -31,6 +32,7 @@ extern void purple_init_skypeweb_plugin();
 
 - (void)loadLibpurplePlugin
 {
+    AILog(@"Loading skypeweb4adium plugin %s (skypeweb4pidgin: "SKYPEWEB_PLUGIN_VERSION")",[[self pluginVersion] UTF8String]);
 }
 
 - (NSString *)pluginAuthor
@@ -40,7 +42,7 @@ extern void purple_init_skypeweb_plugin();
 
 -(NSString *)pluginVersion
 {
-  return @"1.0";
+  return @"1.1";
 }
 
 -(NSString *)pluginDescription
