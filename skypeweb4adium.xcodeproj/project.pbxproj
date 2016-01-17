@@ -192,6 +192,7 @@
 				CDEC6DC71AED672300E6E652 /* Frameworks */,
 				CDEC6DC81AED672300E6E652 /* Resources */,
 				CD74DB701AED691D00E6E652 /* ShellScript */,
+				CD317A631C4BE3A700E6E652 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -246,6 +247,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		CD317A631C4BE3A700E6E652 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PLUGIN_BIN=\"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\"\nLIBS=\"$(/usr/bin/otool -L \"$PLUGIN_BIN\" | \\\n/usr/bin/tail -n +2 | \\\n/usr/bin/tr -d '\\t' | \\\n/usr/bin/grep -e '^@[a-z_]*path.*' | \\\n/usr/bin/grep -v -e '\\.framework/Versions/Current' | \\\n/usr/bin/sed \\\ns/'(compatibility version [0-9.]*, current version [0-9.]*)'/''/g)\"\n\nfor LIB in $LIBS; do\nNEW_LIB=\"$(/bin/echo \"$LIB\" | /usr/bin/sed s,'Versions/[A-Za-z0-9.]*/','Versions/Current/',)\"\nprintf \"Changing '%s' to '%s'\\n\" \"$LIB\" \"$NEW_LIB\"\n/usr/bin/install_name_tool -change \"$LIB\" \"$NEW_LIB\" \"$PLUGIN_BIN\"\ndone";
+		};
 		CD74DB701AED691D00E6E652 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
