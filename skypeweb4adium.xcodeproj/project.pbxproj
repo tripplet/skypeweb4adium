@@ -187,9 +187,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDEC6DD11AED672300E6E652 /* Build configuration list for PBXNativeTarget "skypeweb4adium" */;
 			buildPhases = (
+				CD7B08E61B5DAB9000E6E652 /* ShellScript */,
 				CDEC6DC61AED672300E6E652 /* Sources */,
 				CDEC6DC71AED672300E6E652 /* Frameworks */,
-				CD7B08E61B5DAB9000E6E652 /* ShellScript */,
 				CDEC6DC81AED672300E6E652 /* Resources */,
 				CD74DB701AED691D00E6E652 /* ShellScript */,
 			);
