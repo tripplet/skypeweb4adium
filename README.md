@@ -1,6 +1,6 @@
 skypeweb4adium
 ==============
-Adium protocol plugin to support Sykpe instant messaging
+Adium protocol plugin to support Skype instant messaging
 
 [![Build Status](https://travis-ci.org/tripplet/skypeweb4adium.svg?branch=master)](https://travis-ci.org/tripplet/skypeweb4adium)
 
