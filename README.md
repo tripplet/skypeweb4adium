@@ -14,10 +14,12 @@ Thanks
 
 
 ### How to build yourself
-1. Checkout this git repository
-2. Init submodules:
-   `git submodule init; git submodule update`
-3. Compile Adium:
+1. Checkout this git repository and init submodules
+
+   `git clone --recursive https://github.com/tripplet/skypeweb4adium.git`
+2. Compile Adium:
+
    `cd adium; make`
-6. Compile the plugin:
-   `xcodebuild -configuration Release -project "skypeweb4adium.xcodeproj.xcodeproj"`
+3. Compile the plugin:
+
+   `xcodebuild -configuration Release -project "skypeweb4adium.xcodeproj"`
