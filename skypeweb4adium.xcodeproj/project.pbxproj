@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD25998E1F9543AA0046A0FF /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = CD2599861F9543910046A0FF /* http.c */; };
+		CD25998F1F9543AE0046A0FF /* purple-socket.c in Sources */ = {isa = PBXBuildFile; fileRef = CD2599811F9543900046A0FF /* purple-socket.c */; };
 		CD74DB751AED6E4B00E6E652 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB721AED6E4B00E6E652 /* Adium.framework */; };
 		CD74DB761AED6E4B00E6E652 /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB731AED6E4B00E6E652 /* AdiumLibpurple.framework */; };
 		CD74DB771AED6E4B00E6E652 /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD74DB741AED6E4B00E6E652 /* AIUtilities.framework */; };
@@ -31,6 +33,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2599811F9543900046A0FF /* purple-socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "purple-socket.c"; path = "skype4pidgin/skypeweb/purple2compat/purple-socket.c"; sourceTree = "<group>"; };
+		CD2599821F9543900046A0FF /* circularbuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = circularbuffer.h; path = skype4pidgin/skypeweb/purple2compat/circularbuffer.h; sourceTree = "<group>"; };
+		CD2599831F9543900046A0FF /* glibcompat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = glibcompat.h; path = skype4pidgin/skypeweb/purple2compat/glibcompat.h; sourceTree = "<group>"; };
+		CD2599841F9543910046A0FF /* purple-socket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "purple-socket.h"; path = "skype4pidgin/skypeweb/purple2compat/purple-socket.h"; sourceTree = "<group>"; };
+		CD2599851F9543910046A0FF /* xfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xfer.h; path = skype4pidgin/skypeweb/purple2compat/xfer.h; sourceTree = "<group>"; };
+		CD2599861F9543910046A0FF /* http.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = http.c; path = skype4pidgin/skypeweb/purple2compat/http.c; sourceTree = "<group>"; };
+		CD2599871F9543910046A0FF /* plugins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = plugins.h; path = skype4pidgin/skypeweb/purple2compat/plugins.h; sourceTree = "<group>"; };
+		CD2599881F9543910046A0FF /* http.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = http.h; path = skype4pidgin/skypeweb/purple2compat/http.h; sourceTree = "<group>"; };
+		CD2599891F9543910046A0FF /* image-store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "image-store.h"; path = "skype4pidgin/skypeweb/purple2compat/image-store.h"; sourceTree = "<group>"; };
+		CD25998A1F9543910046A0FF /* internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = internal.h; path = skype4pidgin/skypeweb/purple2compat/internal.h; sourceTree = "<group>"; };
+		CD25998B1F9543910046A0FF /* image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = image.h; path = skype4pidgin/skypeweb/purple2compat/image.h; sourceTree = "<group>"; };
+		CD4A5DE41F9544DC005A020A /* sha256hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sha256hash.h; path = skype4pidgin/skypeweb/purple2compat/ciphers/sha256hash.h; sourceTree = "<group>"; };
+		CD67EC291F95440900BEA31F /* sha256hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sha256hash.h; path = skype4pidgin/skypeweb/purple2compat/ciphers/sha256hash.h; sourceTree = "<group>"; };
 		CD74DB721AED6E4B00E6E652 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = "adium/build/Release-Debug/Adium.framework"; sourceTree = "<group>"; };
 		CD74DB731AED6E4B00E6E652 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = "adium/build/Release-Debug/AdiumLibpurple.framework"; sourceTree = "<group>"; };
 		CD74DB741AED6E4B00E6E652 /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "adium/build/Release-Debug/AIUtilities.framework"; sourceTree = "<group>"; };
@@ -86,6 +101,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD2599801F9543790046A0FF /* purple2compat */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A5DE31F9544C7005A020A /* ciphers */,
+				CD67EC291F95440900BEA31F /* sha256hash.h */,
+				CD2599821F9543900046A0FF /* circularbuffer.h */,
+				CD2599831F9543900046A0FF /* glibcompat.h */,
+				CD2599861F9543910046A0FF /* http.c */,
+				CD2599881F9543910046A0FF /* http.h */,
+				CD2599891F9543910046A0FF /* image-store.h */,
+				CD25998B1F9543910046A0FF /* image.h */,
+				CD25998A1F9543910046A0FF /* internal.h */,
+				CD2599871F9543910046A0FF /* plugins.h */,
+				CD2599811F9543900046A0FF /* purple-socket.c */,
+				CD2599841F9543910046A0FF /* purple-socket.h */,
+				CD2599851F9543910046A0FF /* xfer.h */,
+			);
+			name = purple2compat;
+			sourceTree = "<group>";
+		};
+		CD4A5DE31F9544C7005A020A /* ciphers */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A5DE41F9544DC005A020A /* sha256hash.h */,
+			);
+			name = ciphers;
+			sourceTree = "<group>";
+		};
 		CD74DB711AED6BD300E6E652 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +166,7 @@
 		CD99FB3B1B5BF4A100E6E652 /* skypeweb4purple */ = {
 			isa = PBXGroup;
 			children = (
+				CD2599801F9543790046A0FF /* purple2compat */,
 				CD99FB3C1B5BF4E100E6E652 /* libskypeweb.c */,
 				CD99FB3D1B5BF4E100E6E652 /* libskypeweb.h */,
 				CD99FB3E1B5BF4E100E6E652 /* skypeweb_connection.c */,
@@ -209,7 +253,7 @@
 		CDEC6DC21AED672300E6E652 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Tobias Tangemann";
 				TargetAttributes = {
 					CDEC6DC91AED672300E6E652 = {
@@ -293,6 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD25998F1F9543AE0046A0FF /* purple-socket.c in Sources */,
+				CD25998E1F9543AA0046A0FF /* http.c in Sources */,
 				CD99FB4A1B5BF4E100E6E652 /* skypeweb_contacts.c in Sources */,
 				CD99FB4D1B5BF4E100E6E652 /* skypeweb_util.c in Sources */,
 				CD99FB4B1B5BF4E100E6E652 /* skypeweb_login.c in Sources */,
@@ -312,23 +358,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/adium/build/Release-Debug",
@@ -357,6 +411,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
 				SDKROOT = macosx;
 			};
@@ -366,18 +421,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
@@ -414,8 +476,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libjson-glib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libpurple.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/skypeweb4purple/purple2comat",
+				);
 				INFOPLIST_FILE = skypeweb4adium/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangemann.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = AdiumPlugin;
@@ -426,8 +496,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libjson-glib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libpurple.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/skypeweb4purple/purple2comat",
+				);
 				INFOPLIST_FILE = skypeweb4adium/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangemann.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = AdiumPlugin;

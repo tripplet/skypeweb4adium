@@ -64,7 +64,6 @@
     [self registerStatus: STATUS_NAME_AVAILABLE ofType:AIAvailableStatusType];
     [self registerStatus: STATUS_NAME_AWAY      ofType:AIAwayStatusType];
     [self registerStatus: STATUS_NAME_BUSY      ofType:AIAwayStatusType];
-    [self registerStatus: STATUS_NAME_INVISIBLE ofType:AIInvisibleStatusType];
     [self registerStatus: STATUS_NAME_OFFLINE   ofType:AIOfflineStatusType];
 }
 
