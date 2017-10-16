@@ -163,7 +163,7 @@
 			name = icons;
 			sourceTree = "<group>";
 		};
-		CD99FB3B1B5BF4A100E6E652 /* skypeweb4purple */ = {
+		CD99FB3B1B5BF4A100E6E652 /* skypeweb */ = {
 			isa = PBXGroup;
 			children = (
 				CD2599801F9543790046A0FF /* purple2compat */,
@@ -180,14 +180,14 @@
 				CD99FB461B5BF4E100E6E652 /* skypeweb_util.c */,
 				CD99FB471B5BF4E100E6E652 /* skypeweb_util.h */,
 			);
-			name = skypeweb4purple;
+			name = skypeweb;
 			sourceTree = "<group>";
 		};
 		CDEC6DC11AED672300E6E652 = {
 			isa = PBXGroup;
 			children = (
 				CDEC6DCC1AED672300E6E652 /* skypeweb4adium */,
-				CD99FB3B1B5BF4A100E6E652 /* skypeweb4purple */,
+				CD99FB3B1B5BF4A100E6E652 /* skypeweb */,
 				CD74DB711AED6BD300E6E652 /* Frameworks */,
 				CDEC6DCB1AED672300E6E652 /* Products */,
 			);
@@ -481,7 +481,7 @@
 					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
 					"$(SOURCE_ROOT)/adium/Frameworks/libjson-glib.framework/Versions/Current/Headers",
 					"$(SOURCE_ROOT)/adium/Frameworks/libpurple.framework/Versions/Current/Headers",
-					"$(SOURCE_ROOT)/skypeweb4purple/purple2comat",
+					"$(SOURCE_ROOT)/skype4pidgin/skypeweb/purple2compat",
 				);
 				INFOPLIST_FILE = skypeweb4adium/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -501,7 +501,7 @@
 					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
 					"$(SOURCE_ROOT)/adium/Frameworks/libjson-glib.framework/Versions/Current/Headers",
 					"$(SOURCE_ROOT)/adium/Frameworks/libpurple.framework/Versions/Current/Headers",
-					"$(SOURCE_ROOT)/skypeweb4purple/purple2comat",
+					"$(SOURCE_ROOT)/skype4pidgin/skypeweb/purple2compat",
 				);
 				INFOPLIST_FILE = skypeweb4adium/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
