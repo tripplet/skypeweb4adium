@@ -17,9 +17,19 @@ Thanks
 1. Checkout this git repository and init submodules
 
    `git clone --recursive https://github.com/tripplet/skypeweb4adium.git`
-2. Compile Adium:
+   
+2. Install openssl (necessary for building adium) 
 
-   `cd adium; make`
-3. Compile the plugin:
+   `brew install openssl`
+  
+3. Patch adium
+
+   `git apply adium.patch`
+
+4. Compile Adium:
+
+   `cd adium; make -j`
+   
+5. Compile the plugin:
 
    `xcodebuild -configuration Release -project "skypeweb4adium.xcodeproj"`
