@@ -30,6 +30,8 @@
 		CD99FB4C1B5BF4E100E6E652 /* skypeweb_messages.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB441B5BF4E100E6E652 /* skypeweb_messages.c */; };
 		CD99FB4D1B5BF4E100E6E652 /* skypeweb_util.c in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB461B5BF4E100E6E652 /* skypeweb_util.c */; };
 		CD99FB4F1B5BFBF700E6E652 /* PurpleSkypeWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = CD99FB4E1B5BFBF700E6E652 /* PurpleSkypeWebService.m */; };
+		CDE7B9EA22993C01008D5015 /* SkypeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7B9E822993C01008D5015 /* SkypeSettingsViewController.m */; };
+		CDE7B9EB22993C01008D5015 /* SkypeSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE7B9E922993C01008D5015 /* SkypeSettings.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,9 @@
 		CD99FB471B5BF4E100E6E652 /* skypeweb_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skypeweb_util.h; path = skype4pidgin/skypeweb/skypeweb_util.h; sourceTree = "<group>"; };
 		CD99FB4E1B5BFBF700E6E652 /* PurpleSkypeWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurpleSkypeWebService.m; sourceTree = "<group>"; };
 		CD99FB501B5BFC1300E6E652 /* PurpleSkypeWebService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PurpleSkypeWebService.h; sourceTree = "<group>"; };
+		CDE7B9E722993C01008D5015 /* SkypeSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkypeSettingsViewController.h; sourceTree = "<group>"; };
+		CDE7B9E822993C01008D5015 /* SkypeSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkypeSettingsViewController.m; sourceTree = "<group>"; };
+		CDE7B9E922993C01008D5015 /* SkypeSettings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkypeSettings.xib; sourceTree = "<group>"; };
 		CDEC6DCA1AED672300E6E652 /* skypeweb4adium.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skypeweb4adium.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEC6DCE1AED672300E6E652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +188,16 @@
 			name = skypeweb;
 			sourceTree = "<group>";
 		};
+		CDE7B9E122993AB0008D5015 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CDE7B9E722993C01008D5015 /* SkypeSettingsViewController.h */,
+				CDE7B9E822993C01008D5015 /* SkypeSettingsViewController.m */,
+				CDE7B9E922993C01008D5015 /* SkypeSettings.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		CDEC6DC11AED672300E6E652 = {
 			isa = PBXGroup;
 			children = (
@@ -204,13 +219,14 @@
 		CDEC6DCC1AED672300E6E652 /* skypeweb4adium */ = {
 			isa = PBXGroup;
 			children = (
-				CDEC6DCD1AED672300E6E652 /* Supporting Files */,
+				CDE7B9E122993AB0008D5015 /* Settings */,
 				CD74DB851AED6F6800E6E652 /* AISkypewebPlugin.h */,
 				CD74DB831AED6F3100E6E652 /* AISkypewebPlugin.m */,
 				CD99FB501B5BFC1300E6E652 /* PurpleSkypeWebService.h */,
 				CD99FB4E1B5BFBF700E6E652 /* PurpleSkypeWebService.m */,
 				CD7B08E31B5DA96600E6E652 /* PurpleSkypeWebAccount.h */,
 				CD7B08E41B5DA96600E6E652 /* PurpleSkypeWebAccount.m */,
+				CDEC6DCD1AED672300E6E652 /* Supporting Files */,
 			);
 			path = skypeweb4adium;
 			sourceTree = "<group>";
@@ -253,11 +269,12 @@
 		CDEC6DC21AED672300E6E652 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Tobias Tangemann";
 				TargetAttributes = {
 					CDEC6DC91AED672300E6E652 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -266,6 +283,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CDEC6DC11AED672300E6E652;
@@ -283,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE7B9EB22993C01008D5015 /* SkypeSettings.xib in Resources */,
 				CD7B08E11B5DA80000E6E652 /* skype_small.png in Resources */,
 				CD7B08DB1B5DA55900E6E652 /* skype.png in Resources */,
 			);
@@ -302,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PLUGIN_BIN=\"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\"\nLIBS=\"$(/usr/bin/otool -L \"$PLUGIN_BIN\" | \\\n/usr/bin/tail -n +2 | \\\n/usr/bin/tr -d '\\t' | \\\n/usr/bin/grep -e '^@[a-z_]*path.*' | \\\n/usr/bin/grep -v -e '\\.framework/Versions/Current' | \\\n/usr/bin/sed \\\ns/'(compatibility version [0-9.]*, current version [0-9.]*)'/''/g)\"\n\nfor LIB in $LIBS; do\nNEW_LIB=\"$(/bin/echo \"$LIB\" | /usr/bin/sed s,'Versions/[A-Za-z0-9.]*/','Versions/Current/',)\"\nprintf \"Changing '%s' to '%s'\\n\" \"$LIB\" \"$NEW_LIB\"\n/usr/bin/install_name_tool -change \"$LIB\" \"$NEW_LIB\" \"$PLUGIN_BIN\"\ndone";
+			shellScript = "PLUGIN_BIN=\"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\"\nLIBS=\"$(/usr/bin/otool -L \"$PLUGIN_BIN\" | \\\n/usr/bin/tail -n +2 | \\\n/usr/bin/tr -d '\\t' | \\\n/usr/bin/grep -e '^@[a-z_]*path.*' | \\\n/usr/bin/grep -v -e '\\.framework/Versions/Current' | \\\n/usr/bin/sed \\\ns/'(compatibility version [0-9.]*, current version [0-9.]*)'/''/g)\"\n\nfor LIB in $LIBS; do\nNEW_LIB=\"$(/bin/echo \"$LIB\" | /usr/bin/sed s,'Versions/[A-Za-z0-9.]*/','Versions/Current/',)\"\nprintf \"Changing '%s' to '%s'\\n\" \"$LIB\" \"$NEW_LIB\"\n/usr/bin/install_name_tool -change \"$LIB\" \"$NEW_LIB\" \"$PLUGIN_BIN\"\ndone\n";
 		};
 		CD74DB701AED691D00E6E652 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -315,7 +334,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ln -sf \"$BUILD_DIR\" xcode_build";
+			shellScript = "ln -sf \"$BUILD_DIR\" xcode_build\n";
 		};
 		CD7B08E61B5DAB9000E6E652 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -337,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE7B9EA22993C01008D5015 /* SkypeSettingsViewController.m in Sources */,
 				CD25998F1F9543AE0046A0FF /* purple-socket.c in Sources */,
 				CD25998E1F9543AA0046A0FF /* http.c in Sources */,
 				CD99FB4A1B5BF4E100E6E652 /* skypeweb_contacts.c in Sources */,
@@ -366,12 +386,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -429,12 +451,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -475,6 +499,7 @@
 		CDEC6DD21AED672300E6E652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
@@ -485,9 +510,13 @@
 				);
 				INFOPLIST_FILE = skypeweb4adium/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tangemann.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "skypeweb4adium/skypeweb4adium-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = AdiumPlugin;
 			};
 			name = Debug;
@@ -495,6 +524,7 @@
 		CDEC6DD31AED672300E6E652 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
@@ -505,9 +535,12 @@
 				);
 				INFOPLIST_FILE = skypeweb4adium/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tangemann.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "skypeweb4adium/skypeweb4adium-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = AdiumPlugin;
 			};
 			name = Release;

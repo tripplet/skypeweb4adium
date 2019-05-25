@@ -12,6 +12,8 @@
 #import "PurpleSkypeWebAccount.h"
 #import "PurpleSkypeWebService.h"
 
+#import "SkypeSettingsViewController.h"
+
 #import <Adium/AISharedAdium.h>
 #import <Adium/AIStatusControllerProtocol.h>
 #import <AIUtilities/AIStringUtilities.h>
@@ -43,6 +45,10 @@
     } else {
         return [NSImage imageNamed:@"skype" forClass:[self class] loadLazily:YES];
     }
+}
+
+- (AIAccountViewController *) accountViewController {
+    return [[SkypeSettingsViewController alloc] init];
 }
 
 - (NSString *)pathForDefaultServiceIconOfType:(AIServiceIconType)iconType

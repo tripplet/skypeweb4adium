@@ -9,6 +9,10 @@
 #import <Cocoa/Cocoa.h>
 #import <AdiumLibpurple/CBPurpleAccount.h>
 
-@interface PurpleSkypeWebAccount : CBPurpleAccount
+@interface PurpleSkypeWebAccount : CBPurpleAccount {
+    
+}
+
+- (PurpleAccount*) getPurpleAccount;
 
 @end

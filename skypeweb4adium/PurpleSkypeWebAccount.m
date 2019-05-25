@@ -11,9 +11,22 @@
 
 @implementation PurpleSkypeWebAccount
 
+- (PurpleAccount *)getPurpleAccount
+{
+    return account;
+}
+
 - (const char*)protocolPlugin
 {
     return "prpl-skypeweb";
+}
+
+// Bridge Adium settings over to the libpurple side
+- (void) configurePurpleAccount
+{
+    [super configurePurpleAccount];
+    
+    purple_account_set_bool(account, "alt-login", [[self preferenceForKey:@"alt-login" group:GROUP_ACCOUNT_STATUS] boolValue]);
 }
 
 - (NSString *)host
