@@ -1,6 +1,5 @@
 language: objective-c
 before_install:
   - brew install openssl
-  - git apply adium.patch
   - cd adium; make -j| tail -n 40; cd ..
 script: xcodebuild -project skypeweb4adium.xcodeproj -configuration Release 
