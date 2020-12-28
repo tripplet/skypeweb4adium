@@ -2,4 +2,5 @@ language: objective-c
 before_install:
   - brew install openssl
   - cd adium; make -j| tail -n 40; cd ..
+  - git apply --directory=skype4pidgin skype4pidgin_pull_request_665.patch
 script: xcodebuild -project skypeweb4adium.xcodeproj -configuration Release 

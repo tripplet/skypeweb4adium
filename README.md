@@ -26,6 +26,10 @@ Thanks
 
    `git apply adium.patch`
 
+3. Apply [*Make the opid stage optional*](https://github.com/EionRobb/skype4pidgin/pull/665) patch 
+
+   `git apply --directory=skype4pidgin skype4pidgin_pull_request_665.patch`
+
 4. Compile Adium:
 
    `cd adium; make -j`
