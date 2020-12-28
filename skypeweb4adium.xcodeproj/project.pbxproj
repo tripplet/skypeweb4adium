@@ -504,7 +504,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.6;
+				CURRENT_PROJECT_VERSION = 1.7;
 				HEADER_SEARCH_PATHS = (
 					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
 					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
@@ -530,7 +530,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.6;
+				CURRENT_PROJECT_VERSION = 1.7;
 				HEADER_SEARCH_PATHS = (
 					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
 					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
