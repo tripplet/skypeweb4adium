@@ -1,3 +1,5 @@
+# This project is no longer maintained as Adium is no longer actively developed.
+---
 skypeweb4adium
 ==============
 Adium protocol plugin to support Skype instant messaging
